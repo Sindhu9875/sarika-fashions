@@ -1,0 +1,397 @@
+.admin-add-product-page {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 28px 32px 50px;
+}
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.admin-add-product-page .section-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2d2927;
+  letter-spacing: -0.5px;
+}
+
+/* =========================
+   FORM CARD
+========================= */
+
+.admin-form-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #ece8e5;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(60, 45, 35, 0.05);
+  overflow: hidden;
+}
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.admin-form-section {
+  padding: 30px 32px;
+  border-bottom: 1px solid #eee9e6;
+}
+
+.admin-form-section:last-child {
+  border-bottom: none;
+}
+
+.admin-form-section h3 {
+  margin: 0 0 24px;
+  font-size: 18px;
+  font-weight: 650;
+  color: #302b29;
+}
+
+/* =========================
+   FORM GRID
+========================= */
+
+.admin-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 24px;
+  margin-bottom: 22px;
+}
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.admin-form-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.admin-form-group label {
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a4440;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.admin-form-group input,
+.admin-form-group select,
+.admin-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd7d3;
+  border-radius: 9px;
+  background: #fff;
+  color: #302b29;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.admin-form-group input,
+.admin-form-group select {
+  height: 44px;
+  padding: 0 13px;
+}
+
+.admin-form-group textarea {
+  min-height: 125px;
+  padding: 12px 13px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+.admin-form-group input::placeholder,
+.admin-form-group textarea::placeholder {
+  color: #aaa29d;
+}
+
+/* =========================
+   FOCUS
+========================= */
+
+.admin-form-group input:focus,
+.admin-form-group select:focus,
+.admin-form-group textarea:focus {
+  border-color: #9d8271;
+  box-shadow: 0 0 0 3px rgba(157, 130, 113, 0.1);
+}
+
+/* =========================
+   SELECT
+========================= */
+
+.admin-form-group select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+/* =========================
+   IMAGE UPLOAD
+========================= */
+
+.admin-image-upload {
+  position: relative;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #d8d0cb !important;
+  border-radius: 14px !important;
+  background: #fcfaf9;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.admin-image-upload:hover {
+  border-color: #ad9686 !important;
+  background: #faf7f5;
+}
+
+.admin-image-upload svg {
+  color: #967968;
+}
+
+.admin-image-upload p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #403936;
+}
+
+.admin-image-upload span {
+  color: #918983 !important;
+}
+
+/* File input */
+
+.admin-image-upload input[type="file"] {
+  max-width: 420px;
+  font-size: 13px;
+  color: #68615d;
+}
+
+/* =========================
+   IMAGE PREVIEWS
+========================= */
+
+.admin-image-upload + div {
+  margin-top: 22px !important;
+}
+
+.admin-image-upload + div > div {
+  background: #fff !important;
+  border: 1px solid #e4ded9 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 3px 12px rgba(50, 40, 35, 0.05);
+}
+
+.admin-image-upload + div img {
+  height: 180px !important;
+  object-fit: cover !important;
+}
+
+.admin-image-upload + div button {
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.admin-image-upload + div button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18) !important;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.admin-secondary-button,
+.admin-primary-button {
+  min-width: 125px;
+  height: 44px;
+  padding: 0 20px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* Cancel */
+
+.admin-secondary-button {
+  background: #fff;
+  color: #514a46;
+  border: 1px solid #d9d2ce;
+}
+
+.admin-secondary-button:hover:not(:disabled) {
+  background: #f8f5f3;
+  border-color: #c8beb8;
+}
+
+/* Save */
+
+.admin-primary-button {
+  background: #3d3430;
+  color: #fff;
+  border: 1px solid #3d3430;
+}
+
+.admin-primary-button:hover:not(:disabled) {
+  background: #292320;
+  box-shadow: 0 5px 14px rgba(50, 40, 35, 0.16);
+  transform: translateY(-1px);
+}
+
+/* Disabled */
+
+.admin-secondary-button:disabled,
+.admin-primary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .admin-add-product-page {
+    padding: 24px 22px 40px;
+  }
+
+  .admin-form-section {
+    padding: 26px 24px;
+  }
+
+  .admin-form-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 650px) {
+  .admin-add-product-page {
+    padding: 20px 16px 35px;
+  }
+
+  .admin-add-product-page .section-title {
+    font-size: 25px;
+  }
+
+  .admin-form-section {
+    padding: 22px 18px;
+  }
+
+  .admin-form-section h3 {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .admin-image-upload {
+    padding: 20px !important;
+  }
+
+  .admin-image-upload input[type="file"] {
+    width: 100%;
+  }
+
+  .admin-image-upload + div {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .admin-image-upload + div img {
+    height: 145px !important;
+  }
+
+  .admin-secondary-button,
+  .admin-primary-button {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .admin-add-product-page {
+    padding: 16px 12px 30px;
+  }
+
+  .admin-add-product-page .section-title {
+    font-size: 23px;
+    margin-bottom: 16px !important;
+  }
+
+  .admin-form-section {
+    padding: 20px 15px;
+  }
+
+  .admin-form-grid {
+    gap: 16px;
+  }
+
+  .admin-form-group input,
+  .admin-form-group select {
+    height: 42px;
+  }
+
+  .admin-form-group textarea {
+    min-height: 110px;
+  }
+
+  .admin-image-upload {
+    min-height: 160px;
+    padding: 18px !important;
+  }
+
+  .admin-image-upload + div {
+    grid-template-columns: 1fr !important;
+  }
+
+  .admin-image-upload + div img {
+    height: 190px !important;
+  }
+
+  .admin-form-card > div:last-child {
+    flex-direction: column !important;
+    padding: 0 15px 20px;
+  }
+
+  .admin-secondary-button,
+  .admin-primary-button {
+    width: 100%;
+  }
+}

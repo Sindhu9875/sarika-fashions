@@ -1,0 +1,380 @@
+.admin-info {
+  width: 100%;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.admin-info-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.admin-info-sub {
+  color: #786a6e;
+  margin: -8px 0 28px;
+}
+
+
+/* =========================
+   REFRESH BUTTON
+========================= */
+
+.customer-refresh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--color-border);
+  background: #fff;
+  color: #5f5055;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.customer-refresh-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+
+/* =========================
+   CUSTOMER SUMMARY
+========================= */
+
+.customer-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.customer-summary-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.customer-summary-card > svg {
+  color: var(--color-primary);
+  width: 21px;
+  height: 21px;
+}
+
+.customer-summary-card .rupee-icon {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.customer-summary-card div {
+  display: grid;
+  gap: 4px;
+}
+
+.customer-summary-card span {
+  color: #88787d;
+  font-size: 0.76rem;
+}
+
+.customer-summary-card strong {
+  color: #30262a;
+  font-size: 1.15rem;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.customer-search {
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 15px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.customer-search svg {
+  color: #95868b;
+  flex-shrink: 0;
+}
+
+.customer-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #30262a;
+  font-size: 0.86rem;
+  font-family: inherit;
+}
+
+.customer-search input::placeholder {
+  color: #a3969a;
+}
+
+
+/* =========================
+   TABLE CARD
+========================= */
+
+.admin-info .admin-table-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 8px;
+  overflow: hidden;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.admin-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-info table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+.admin-info th,
+.admin-info td {
+  padding: 15px;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  font-size: 0.86rem;
+  white-space: nowrap;
+}
+
+.admin-info th {
+  color: #75666b;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.admin-info td {
+  color: #55484d;
+}
+
+.admin-info tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-info tbody tr:hover {
+  background: #fcf9fa;
+}
+
+.admin-info td strong {
+  color: #30262a;
+}
+
+
+/* =========================
+   CUSTOMER NAME
+========================= */
+
+.customer-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.customer-avatar {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  border-radius: 50%;
+  background: #f4e7eb;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.customer-name strong {
+  color: #30262a;
+  font-size: 0.86rem;
+}
+
+
+/* =========================
+   EMPTY / LOADING
+========================= */
+
+.customer-empty {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  color: #786a6e;
+}
+
+.customer-empty svg {
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.customer-empty h3 {
+  margin: 5px 0 4px;
+  color: #30262a;
+  font-size: 1rem;
+}
+
+.customer-empty p {
+  margin: 0 0 15px;
+  font-size: 0.84rem;
+}
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.admin-category-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.admin-category-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-category-card svg {
+  color: var(--color-primary);
+}
+
+.admin-category-card div {
+  display: grid;
+  gap: 2px;
+  flex: 1;
+}
+
+.admin-category-card span {
+  font-size: 0.74rem;
+  color: #88787d;
+}
+
+.admin-category-card a {
+  font-size: 0.78rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+
+/* =========================
+   SETTINGS
+========================= */
+
+.settings-card {
+  max-width: 620px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 28px;
+  display: grid;
+  gap: 14px;
+}
+
+.settings-card > svg {
+  color: var(--color-primary);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .admin-info-header {
+    align-items: flex-start;
+  }
+
+  .customer-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .customer-refresh-btn {
+    padding: 9px 11px;
+  }
+
+  .customer-refresh-btn svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .admin-category-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-card {
+    padding: 20px;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .admin-info-header {
+    flex-direction: column;
+  }
+
+  .customer-refresh-btn {
+    align-self: flex-start;
+  }
+
+  .admin-info-sub {
+    margin-bottom: 20px;
+  }
+
+  .customer-summary-card {
+    padding: 15px;
+  }
+
+  .customer-search {
+    min-height: 44px;
+  }
+}
