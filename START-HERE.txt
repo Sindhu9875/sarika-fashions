@@ -1,0 +1,25 @@
+SARIKA FASHIONS — UPDATED VERSION
+
+1. Extract this ZIP.
+2. Open the "sarika-fashions" folder in VS Code.
+3. Open the terminal in VS Code.
+4. Run:
+   npm install
+5. Then run:
+   npm run dev
+6. Open the localhost link shown in the terminal.
+
+What was updated:
+- Full-screen animated homepage hero
+- Script-style Sarika logo + elegant brand styling
+- Animated category/product sections
+- Product cards open full product details
+- Cart, wishlist and checkout remain connected
+- Share button now works
+- Added About and Contact pages
+- Admin panel shortcut in navbar
+- Admin Customers, Categories and Settings routes now work
+- Existing Admin Dashboard, Products and Orders remain included
+
+IMPORTANT:
+This is still a frontend demo for product data. Real database/API image upload and real payments should be connected in the backend stage.
