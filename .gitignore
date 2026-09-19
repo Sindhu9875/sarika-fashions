@@ -1,9 +1,6 @@
-node_modules/
-dist/
-venv/
-__pycache__/
+node_modules
+dist
+dist-ssr
+*.local
 .env
-backend.zip
-sarika-fashions-updated-BACKUP/
-sarika-fashions_frontend/
-
+.DS_Store
