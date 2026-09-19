@@ -1,0 +1,265 @@
+/* .admin-sidebar {
+  width: 240px;
+  background: var(--color-white);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+}
+
+.admin-sidebar-header {
+  padding: 22px 20px;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-sidebar-nav {
+  flex: 1;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.admin-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  color: var(--color-dark);
+  transition: all var(--transition);
+}
+
+.admin-nav-link:hover { background: var(--color-blush); }
+
+.admin-nav-link.is-active {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.admin-logout {
+  margin: 12px;
+  color: var(--color-danger);
+}
+.admin-logout:hover { background: #FADADA; }
+
+.admin-sidebar-close { color: var(--color-dark); }
+
+@media (max-width: 900px) {
+  .admin-sidebar {
+    position: fixed;
+    left: -260px;
+    top: 0;
+    z-index: 300;
+    transition: left var(--transition);
+    box-shadow: var(--shadow-lg);
+  }
+  .admin-sidebar.is-open { left: 0; }
+
+  .admin-sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(43, 27, 32, 0.5);
+    z-index: 290;
+  }
+} */
+
+
+
+
+.admin-sidebar {
+  width: 240px;
+  background: var(--color-white);
+  border-right: 1px solid var(--color-border);
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+
+  position: sticky;
+  top: 0;
+
+  flex-shrink: 0;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.admin-sidebar-header {
+  min-height: 78px;
+  padding: 18px 20px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-sidebar-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.admin-sidebar-label {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--color-muted);
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.admin-sidebar-nav {
+  flex: 1;
+
+  padding: 18px 12px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  overflow-y: auto;
+}
+
+.admin-sidebar-heading {
+  margin: 0 12px 8px;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+
+  color: var(--color-muted);
+}
+
+.admin-nav-link {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 11px 14px;
+
+  border-radius: var(--radius-sm);
+
+  font-size: 0.88rem;
+  font-weight: 500;
+
+  color: var(--color-dark);
+
+  text-decoration: none;
+
+  transition:
+    background var(--transition),
+    color var(--transition),
+    transform var(--transition);
+}
+
+.admin-nav-link:hover {
+  background: var(--color-blush);
+}
+
+.admin-nav-link.is-active {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.admin-nav-link svg {
+  flex-shrink: 0;
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.admin-sidebar-bottom {
+  padding: 12px;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.admin-store-link {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 11px 14px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  background: var(--color-white);
+
+  color: var(--color-dark);
+
+  font-size: 0.88rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: all var(--transition);
+}
+
+.admin-store-link:hover {
+  background: var(--color-blush);
+  border-color: var(--color-primary);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+.admin-sidebar-close {
+  border: 0;
+  background: transparent;
+
+  color: var(--color-dark);
+
+  cursor: pointer;
+
+  padding: 4px;
+}
+
+.admin-sidebar-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(43, 27, 32, 0.5);
+
+  z-index: 290;
+}
+
+@media (max-width: 900px) {
+  .admin-sidebar {
+    position: fixed;
+
+    left: -260px;
+    top: 0;
+
+    z-index: 300;
+
+    transition: left var(--transition);
+
+    box-shadow: var(--shadow-lg);
+  }
+
+  .admin-sidebar.is-open {
+    left: 0;
+  }
+}

@@ -1,0 +1,16 @@
+.topbar {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  text-align: center;
+  padding: 8px 16px;
+}
+
+.topbar p {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .topbar p { font-size: 0.62rem; }
+}

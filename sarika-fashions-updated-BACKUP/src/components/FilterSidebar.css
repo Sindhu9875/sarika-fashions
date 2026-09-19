@@ -1,0 +1,113 @@
+.filter-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  align-self: flex-start;
+}
+
+.filter-group { margin-bottom: 26px; }
+.filter-group:last-of-type { margin-bottom: 16px; }
+
+.filter-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.filter-group h4 {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.filter-clear {
+  font-size: 0.72rem;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #4a3a3e;
+}
+
+.filter-checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+}
+
+.filter-price-slider {
+  width: 100%;
+  accent-color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.filter-price-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: #7a6a6e;
+}
+
+.filter-colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-color-swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 1px var(--color-border);
+}
+
+.filter-color-swatch.is-active {
+  border-color: var(--color-white);
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+@media (max-width: 900px) {
+  .filter-sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 84%;
+    max-width: 320px;
+    height: 100%;
+    z-index: 300;
+    overflow-y: auto;
+    border-radius: 0;
+    transition: left var(--transition);
+  }
+  .filter-sidebar.is-open { left: 0; }
+
+  .filter-sidebar-mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .filter-sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(43,27,32,0.5);
+    z-index: 290;
+  }
+}
