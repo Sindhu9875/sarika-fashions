@@ -1,0 +1,14 @@
+tree d1e87b22df27a4739c9edb5d508f6d3917018dd6
+
+.gitignore
+.vscode/
+README.md
+START-HERE.txt
+backend/
+index.html
+package-lock.json
+package.json
+public/
+sarika-fashions-updated-BACKUP/
+sarika-fashions_frontend
+vite.config.js

@@ -1,0 +1,14 @@
+tree 9bbce5e077ef503226906ba91876dee8ecb15a71
+
+.gitignore
+.vscode/
+README.md
+START-HERE.txt
+index.html
+package-lock.json
+package.json
+public/
+sarika-fashions_frontend
+src/
+vite.config.js
+vite.config.js.timestamp-1789835636086-9ba8c791ea47b8.mjs
