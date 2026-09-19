@@ -1,0 +1,9 @@
+node_modules/
+dist/
+venv/
+__pycache__/
+.env
+backend.zip
+sarika-fashions-updated-BACKUP/
+sarika-fashions_frontend/
+
